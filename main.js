@@ -67,7 +67,7 @@ function galhos(tamanho, depth) {
 }
 
 function mouseWheel(event) {
-    if (event.deltaY > 0) depthLim += 1;
+    if (event.deltaY < 0) depthLim += 1;
     else depthLim -= 1;
     
     if(depthLim < 0) depthLim = 0;
